@@ -24,13 +24,23 @@ module.exports = {
 					options: {
 						name: 'img/[name][hash:8].[ext]',
 					}
-				},{
+				}, {
 					loader: "url-loader",
 					options: {
 						limit: 8196,
 					}
 				}],
-			}
+			},
+			// {
+			// 	test: /\.m?js$/,
+			// 	exclude: /(node_modules|bower_components)/,
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		options: {
+			// 			presets: ['@babel/preset-env']
+			// 		}
+			// 	}
+			// }
 		]
 	}
 
